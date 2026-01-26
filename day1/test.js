@@ -1,4 +1,4 @@
-// Amr Mousa Sayed Rashad
+// Amr Mousa Sayed rash's
 // Data 25-1-2026
 // JavaScript Basics - Exercises Solutions
 // node v v22.18.0
