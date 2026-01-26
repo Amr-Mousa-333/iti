@@ -1,3 +1,8 @@
+// Amr Mousa Sayed Rashad
+// Data 25-1-2026
+// JavaScript Basics - Exercises Solutions
+// node v v22.18.0
+// ---------------------------------------------------------
 //question 1
 // 1
 // literal creation
