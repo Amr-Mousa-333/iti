@@ -1,22 +1,22 @@
 //question 1
 // 1
 // literal creation
-let userName = "Amr";
+var userName = "Amr";
 // 2
 //  literal creation
-let userAge = 25;
+var userAge = 25;
 // 3
 //  isStudent
-let isStudent = true;
+var isStudent = true;
 // 4
 // userProfile as an object
-let userProfile = {
+var userProfile = {
   name: userName,
   age: userAge,
   city: "Cairo"
 };
 // 5
-let anotherProfile = userProfile;
+var anotherProfile = userProfile;
 // 6
 //  Change the name
 anotherProfile.name = "mousa";
@@ -25,19 +25,19 @@ anotherProfile.name = "mousa";
 console.log("userProfile.name:", userProfile.name);
 console.log("anotherProfile.name:", anotherProfile.name);
 // **Question:** What is the difference between copying primitive data types vs objects in JavaScript?
-//  Primitive types: Number, String, Boolean, undefined, null let a = 10;let b = a;
-// Objects: Object, Array, Function let obj1 = { name: "Amr" };
+//  Primitive types: Number, String, Boolean, undefined, null var a = 10;var b = a;
+// Objects: Object, Array, Function var obj1 = { name: "Amr" };
 // ---------------------------------------------------------
 //question 2
 // 1
 // Literal
-let str1 = "JavaScript";
+var str1 = "JavaScript";
 // 2
 //Constructor
-let str2 = new String("JavaScript");
+var str2 = new String("JavaScript");
 // 3
 //constructor
-let str3 = new String("JavaScript");
+var str3 = new String("JavaScript");
 // 4
 console.log("str1 == str2:", str1 == str2); // true
 // 5
@@ -53,11 +53,11 @@ console.log("typeof str2:", typeof str2); // object
 // question 3
 // 1
 // Prompt the user to enter a number (as a string)
-let userInput = prompt("Enter a num");
+var userInput = prompt("Enter a num");
 // 2
-let num11 = Number(userInput);
-let num22 = parseInt(userInput);
-let num33 = +userInput;
+var num11 = Number(userInput);
+var num22 = parseInt(userInput);
+var num33 = +userInput;
 
 // 3
 // Store results in separate variables
@@ -65,18 +65,18 @@ let num33 = +userInput;
 // 4
 // Check if the conversion was successful
 function isValidNumber(n) {
-  let num = Number(n);
+  var num = Number(n);
   return typeof num === "number" && !isNaN(num);
 }
 
 // 5
 // If valid, perform operations
 if (isValidNumber(num1)) {
-  let added = num1 + 10;
+  var added = num1 + 10;
 
-  let multiplied = added * 2;
+  var multiplied = added * 2;
 
-  let finalResult = multiplied.toString() + " final res";
+  var finalResult = multiplied.toString() + " final res";
 
   console.log(finalResult);
 } else {
@@ -92,8 +92,8 @@ console.log("parseInt():", num22, "isNaN?", isNaN(num22));
 // question  4
 // 1
 //  input
-let num1 = prompt(" first num");
-let num2 = prompt(" second num");
+var num1 = prompt(" first num");
+var num2 = prompt(" second num");
 
 num1 = Number(num1);
 num2 = Number(num2);
@@ -124,18 +124,18 @@ console.log("5 === '5':", 5 === "5"); // false, different types
 // question 5
 // 1
 // Prompt the user to enter their score (0-100)
-let scoreInput = prompt("Enter score (0-100)");
+var scoreInput = prompt("Enter score (0-100)");
 
 // 2
 // input to number
-let score = Number(scoreInput);
+var score = Number(scoreInput);
 
 // 3
 if (isNaN(score) || score < 0 || score > 100) {
   console.log("cheek num between 0 and 100");
 } else {
   // 4
-  let grade;
+  var grade;
   if (score >= 90) {
     grade = "A";
   } else if (score >= 80) {
@@ -155,12 +155,12 @@ if (isNaN(score) || score < 0 || score > 100) {
 // question 5 - Bonus
 //using switch
 // 1
-let scoreInput2 = prompt("Enter score (0-100) ");
-let score2 = Number(scoreInput2);
+var scoreInput2 = prompt("Enter score (0-100) ");
+var score2 = Number(scoreInput2);
 if (isNaN(score2) || score2 < 0 || score2 > 100) {
   console.log(" num between 0 and 100.");
 } else {
-  let grade;
+  var grade;
   switch (Math.floor(score2 / 10)) {
     case 10:
     case 9:
@@ -311,20 +311,20 @@ console.log("Thank you! You entered:", validNumber);
 // Q7 - BONUS
 
 // 1
-let nInput = prompt("positive integer");
+var nInput = prompt("positive integer");
 
 // 2
-let n = Number(nInput);
+var n = Number(nInput);
 if (isNaN(n) || n <= 0 || !Number.isInteger(n)) {
   console.log("Invalid int");
 } else {
   // 3
-  let fizzCount = 0;
-  let buzzCount = 0;
-  let fizzBuzzCount = 0;
-  let luckyCount = 0;
+  var fizzCount = 0;
+  var buzzCount = 0;
+  var fizzBuzzCount = 0;
+  var luckyCount = 0;
   // 4
-  for (let i = 1; i <= n; i++) {
+  for (var i = 1; i <= n; i++) {
     // 7 has highest priority
     if (i % 7 === 0) {
       console.log("Lucky");
