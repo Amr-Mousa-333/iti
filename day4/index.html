@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day Four JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- hello world this is a comment ! -->
+    <h1>BOM & DOM</h1>
+    <hr />
+    hello this is not an element but it is text node
+    <hr />
+    <p class="my-p one">welcome to BOM and DOM</p>
+    <p class="my-p two">welcome to BOM and DOM</p>
+    <button class="btn" id="btn-one" onclick="openNewWindow()">
+      Open new Window
+    </button>
+    <br />
+    <br />
+    <button class="btn" onclick="closeWindow()">Close Window</button>
+    <br />
+    <br />
+    <button class="btn" onclick="focusWindow()">Focus Window</button>
+    <br>
+    <button class="btn" onclick="changePStyle()">change Style</button>
+    <form>
+      <input
+        type="text"
+        name="userName"
+        id="user-name"
+        placeholder="Enter your name"
+      />
+      <input type="password" name="password" id="my-password" placeholder="Enter your password" />
+      <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

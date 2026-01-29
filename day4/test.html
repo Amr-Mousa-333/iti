@@ -10,13 +10,31 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="test.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+        <button id="btn-1" onclick="showPage()">Show Current URL</button>
+        <button id="btn-2" onclick="reload()">Reload Page</button>
+        <button id="btn-3" onclick="goToWikipedia()">Go to Wikipedia</button>
+        <p id="description" class="toggleStyle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui ratione repellat amet accusantium, doloribus maiores cupiditate, minima aliquid autem laboriosam quos numquam nostrum adipisci illo unde eos harum iusto incidunt nulla possimus voluptatibus aperiam ipsum. Temporibus, nobis eos enim dolorum, eum quam quia maiores facilis porro aut facere optio illum consectetur voluptatum totam ullam labore? Laborum aperiam quo molestias totam voluptate vitae ipsa enim. Vero unde porro cumque accusantium facere omnis itaque sequi voluptas rerum saepe veritatis, corrupti sit quisquam sed odit natus totam animi velit. Aut praesentium, molestias assumenda, illum, quibusdam recusandae maxime aperiam soluta rem tempore facere!</p>
+        <input type="text" id="new-text" placeholder="Enter new description">
+        <button onclick="changeParagraph()">change inside paragraph</button>
+        <button onclick="changeStyle()">change style</button>
+        <hr>
+        <input type="text" id="ex5" placeholder="Enter txt">
+        <hr>
+        <button class="action-btn">1</button>
+        <button class="action-btn">2</button>
+        <button class="action-btn">3</button>
+        <button class="action-btn">4</button>
+        <hr> <br>
+        <button type="button" onclick="openNew()" id="openNewBtn">open new page</button>
+        <button onclick="closePage()" id="closePageBtn">close page</button>
+        <button onclick="moveTo()" id="moveToBtn">move to</button>
+        <button onclick="reSize()" id="reSizeBtn">re sizing</button>
         <script src="test.js" async defer></script>
     </body>
 </html>

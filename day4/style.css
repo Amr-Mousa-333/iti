@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-color: #333;
+  --background-color: #f4f4f4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  color: var(--font-color);
+  background-color: var(--background-color);
+  padding: 2rem;
+}
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  width: 200px;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: rgb(68, 221, 229);
+  color: white;
+  border: 3px solid rgb(68, 221, 229);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 2rem;
+}
+.btn:hover {
+  background-color: white;
+  color: rgb(68, 221, 229);
+}
+.my-p {
+  color: black;
+  /* background-color: #afb4ee; */
+  margin: 3rem 0;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+body > .my-p {
+  font-weight: bold;
+}
+body .my-p {
+  font-style: italic;
+}
+
+.my-p::first-letter {
+  font-size: 200%;
+  color: var(--secondary-color);
+}
+
+
+.paragraph-a {
+  margin-bottom: 1.5rem;
+  background-color: bisque;
+  width: 50%;
+  margin: 3rem auto;
+}
+
+
+body > h1{
+    color:blue;
+}
+
+h1{
+    color:green;
+}

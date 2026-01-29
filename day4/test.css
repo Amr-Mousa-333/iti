@@ -1,0 +1,6 @@
+#paragraph {
+    background-color: yellow;
+}
+.toggleStyle::selection{
+    background-color: aqua;
+}
